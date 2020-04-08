@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./js/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/colorbox/colorbox.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./js/colorbox/jquery.colorbox-min.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script src="./js/js.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1daa24c4-ebaf-4248-b61e-18421fdf36d1&lang=ru_RU"></script>
+</head>
+<body class="is-service-page has-sidebar">
+
+
+<div id="header">
+
+    <div class="header-block">
+        <div class="container-big inner flex flex-middle">
+            <a href="#" class="logo flex flex-middle">
+                <img src="./img/logo.png" alt="">
+                <span class="name">МедЦентрПроВита</span>
+            </a>
+            <div class="menu-and-contacts flex flex-middle">
+                <ul class="menu flex flex-middle">
+                    <li>
+                        <a href="#">Отделения</a>
+                        <ul>
+                            <li><a href="#">Кардиология</a></li>
+                            <li><a href="#">Гинекология</a></li>
+                            <li><a href="#">Функциональная диагностика</a></li>
+                            <li><a href="#">Процедурный кабинет</a></li>
+                            <li><a href="#">Косметология</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Специалисты</a></li>
+                    <li><a href="#">О центре</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class="order" data-ui-dialog-link="order-form">Online-запись</a>
+                <a href="tel:74956077305" class="phone">+7 (495) 607-73-05</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-info-block">
+        <div class="container inner flex flex-middle">
+            <div>
+                <h1>Косметология</h1>
+                <div class="text">
+                    Привлекательная внешность – это, прежде всего идеальная <br>
+                    кожа. Если это условие не выполняется, то все попытки <br>
+                    выглядеть красиво – тщетны.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="content">
+    <div class="container">
+
+        <div id="center">
+
+            <div class="service-info-block">
+                <div class="links flex flex-left">
+                    <a href="#">Услуги</a>
+                    <a href="#">Цены</a>
+                    <div id="Специалисты"></div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        Привлекательная внешность – это, прежде всего идеальная кожа. Если это условие не выполняется,
+                        то
+                        все попытки выглядеть красиво – тщетны. Поэтому большинство людей стараются следить за кожей,
+                        тратя
+                        немалые средства на покупку ухаживающих или лечебных составов. Если кожа слишком сухая или
+                        жирная,
+                        склонная к угревой сыпи, шелушению и другим проблемам, наиболее правильным решением будет поход
+                        к
+                        профессиональному врачу-косметологу.
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="title">Поводы для записи к косметологу</div>
+                    <div class="text">
+                        Косметолог – врач, который диагностирует, восстанавливает и лечит покровные ткани организма. Это
+                        не только кожа, но также волосы, слизистые оболочки, ногти. Его работа заключается в поддержании
+                        нормальной структуры или ее восстановлении, если имели место патологические процессы.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="right">
+
+            <div class="right-menu-block">
+                <ul>
+                    <li><a href="#">Лазерная косметология</a></li>
+                    <li><a href="#">Биоревитализация</a></li>
+                    <li><a href="#">Неодимовое омоложение</a></li>
+                    <li><a href="#">Лазерная эпиляция</a></li>
+                    <li><a href="#">Инъекционная косметология</a></li>
+                    <li><a href="#">Контурная пластика</a></li>
+                    <li><a href="#">Коррекция мимических морщин</a></li>
+                    <li><a href="#">Плазмолифтинг лица</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div id="footer">
+
+    <div class="footer-block">
+        <div class="container inner flex">
+
+            <div class="logo-and-copyright">
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="">
+                    <span class="name">МедЦентрПроВита</span>
+                </a>
+                <div class="copyright">
+                    Все права защищены © 2020. Копирование информации
+                    разрешено с указанием активной ссылки на источник.
+                </div>
+            </div>
+
+            <div class="menus flex">
+                <div class="menu">
+                    <div class="title">Отделения</div>
+                    <ul>
+                        <li><a href="#">Отделения</a></li>
+                        <li><a href="#">Кардиология</a></li>
+                        <li><a href="#">Эндокринология</a></li>
+                        <li><a href="#">Гинекология</a></li>
+                        <li><a href="#">Процедурный кабинет</a></li>
+                        <li><a href="#">Косметология</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="title">Информация</div>
+                    <ul>
+                        <li><a href="#">Отделения</a></li>
+                        <li><a href="#">О центре</a></li>
+                        <li><a href="#">Наши специалисты</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <div class="contacts-inner flex flex-middle">
+                    <div class="phones">
+                        <div class="phone">
+                            <a href="#" class="tel:74956077305">+7 (495) 607-73-05</a>
+                        </div>
+                        <div class="phone">
+                            <a href="tel:79264927881">+7 (926) 492-78-81</a>
+                        </div>
+                    </div>
+                    <a href="#" class="instagram">
+                        <svg>
+                            <use xlink:href="./img/icons.svg#instagram-colored"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div data-ui-dialog="order-form"
+     data-ui-dialog-width="500"
+     data-ui-dialog-title="Online-запись"
+>
+    <form action="#" class="order-form">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Имя">
+        </div>
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Телефон">
+        </div>
+        <div class="form-group">
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
