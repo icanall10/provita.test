@@ -23,7 +23,7 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=1daa24c4-ebaf-4248-b61e-18421fdf36d1&lang=ru_RU"></script>
 </head>
-<body class="is-contacts-page has-sidebar">
+<body class="is-service-page has-sidebar">
 
 
 <div id="header">
@@ -57,18 +57,6 @@
         </div>
     </div>
 
-    <div class="page-info-block">
-        <div class="container inner">
-            <div class="info">
-                <ul class="breadcrumb">
-                    <li><a href="#">Главная</a></li>
-                    <li>Контакты</li>
-                </ul>
-                <h1>Контакты</h1>
-            </div>
-        </div>
-    </div>
-
 </div>
 
 
@@ -77,57 +65,106 @@
 
         <div id="center">
 
-            <div class="contacts-block block">
-                <div class="container">
-                    <div class="items">
-                        <div class="item flex flex-left flex-middle">
-                            <div class="icon">
-                                <svg class="svg-contacts-phone">
-                                    <use xlink:href="./img/icons.svg#contacts-phone"></use>
-                                </svg>
-                            </div>
-                            <div class="value flex flex-middle">
-                                <a href="tel:74956077305">+7 (495) 607-73-05</a>
-                                <div class="sep">|</div>
-                                <a href="tel:+79264927881">+7 (926) 492-78-81</a>
-                            </div>
+            <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Новости индустрии</a></li>
+            </ul>
+
+            <h1>Новости</h1>
+
+            <div class="news-list">
+                <div class="news-list-item">
+                    <div class="date-and-category flex flex-left">
+                        <div class="date">15-11-2016</div>
+                        <div class="category">
+                            <a href="#">НОВОСТИ ИНДУСТРИИ</a>
                         </div>
-                        <div class="item flex flex-left flex-middle">
-                            <div class="icon">
-                                <svg class="svg-contacts-mail">
-                                    <use xlink:href="./img/icons.svg#contacts-mail"></use>
-                                </svg>
-                            </div>
-                            <div class="value">
-                                <a href="mailto:info@provita-clinic.ru">info@provita-clinic.ru</a>
-                            </div>
+                    </div>
+                    <div class="name">
+                        <a href="#">Современные возможности отделения хирургии и трансплантации</a>
+                    </div>
+                    <div class="text">
+                        Уже при первом визите вы сможете получить квалифицированную медицинскую помощь, провести
+                        необходимые исследования.
+                    </div>
+                    <div class="more flex">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/icons.svg#doctor-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-list-item">
+                    <div class="date-and-category flex flex-left">
+                        <div class="date">15-11-2016</div>
+                        <div class="category">
+                            <a href="#">НОВОСТИ ИНДУСТРИИ</a>
                         </div>
-                        <div class="item flex flex-middle flex-left">
-                            <div class="icon">
-                                <svg class="svg-contacts-instagram">
-                                    <use xlink:href="./img/icons.svg#contacts-instagram"></use>
-                                </svg>
-                            </div>
-                            <div class="value">
-                                <a href="https://instagram.com/provita_clinic" target="_blank">@provita_clinic</a>
-                            </div>
+                    </div>
+                    <div class="name">
+                        <a href="#">Акция: майские праздники – с пользой для здоровья!</a>
+                    </div>
+                    <div class="text">
+                        Уже при первом визите вы сможете получить квалифицированную медицинскую помощь, провести
+                        необходимые исследования.
+                    </div>
+                    <div class="more flex">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/icons.svg#doctor-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-list-item">
+                    <div class="date-and-category flex flex-left">
+                        <div class="date">15-11-2016</div>
+                        <div class="category">
+                            <a href="#">НОВОСТИ ИНДУСТРИИ</a>
                         </div>
+                    </div>
+                    <div class="name">
+                        <a href="#">В Израиле напечатали человеческое сердце</a>
+                    </div>
+                    <div class="text">
+                        Уже при первом визите вы сможете получить квалифицированную медицинскую помощь, провести
+                        необходимые исследования.
+                    </div>
+                    <div class="more flex">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="./img/icons.svg#doctor-arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="contacts-place-block">
-                <div class="title">Местоположение</div>
-
-                <div class="address">
-                    Россия, Москва, Волконский 1-й переулок, 15
-                </div>
-                <div class="metro">
-                    Cтанция метро: Цветной бульвар (менее 400 м)
-                </div>
-                <div class="map" id="contacts-place-block-map">
-                </div>
+            <div class="pagination">
+                <a href="#" class="prev">
+                    <svg>
+                        <use xlink:href="./img/icons.svg#arrow-medium"></use>
+                    </svg>
+                </a>
+                <a href="#" class="item active">1</a>
+                <a href="#" class="item">2</a>
+                <a href="#" class="item">3</a>
+                <a href="#" class="item">4</a>
+                <a href="#" class="item">5</a>
+                <a href="#" class="item">6</a>
+                <a href="#" class="item">7</a>
+                <a href="#" class="item">8</a>
+                <a href="#" class="next">
+                    <svg>
+                        <use xlink:href="./img/icons.svg#arrow-medium"></use>
+                    </svg>
+                </a>
             </div>
+
+
 
         </div>
 
@@ -135,9 +172,29 @@
 
             <div class="right-menu-block">
                 <ul>
-                    <li><a href="#">О центре</a></li>
-                    <li><a href="#">Лицензии</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Лазерная косметология</a></li>
+                    <li>
+                        <a href="#">
+                            Биоревитализация
+                            <svg>
+                                <use xlink:href="./img/icons.svg#plus"></use>
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="#">Meso-Xanthin F199</a></li>
+                            <li><a href="#">Meso-Wharton P199</a></li>
+                            <li><a href="#">Yvoire Hydro</a></li>
+                            <li><a href="#">Aquashine</a></li>
+                            <li><a href="#">Princess</a></li>
+                            <li><a href="#">Radiesse</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Неодимовое омоложение</a></li>
+                    <li><a href="#">Лазерная эпиляция</a></li>
+                    <li><a href="#">Инъекционная косметология</a></li>
+                    <li><a href="#">Контурная пластика</a></li>
+                    <li><a href="#">Коррекция мимических морщин</a></li>
+                    <li><a href="#">Плазмолифтинг лица</a></li>
                 </ul>
             </div>
 
@@ -229,7 +286,6 @@
         </div>
     </form>
 </div>
-
 
 
 </body>

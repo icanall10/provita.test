@@ -25,7 +25,13 @@
                     width: width,
                     title: title,
                     modal: true,
-                    dialogClass: className
+                    dialogClass: className,
+                    create: function (e, ui) {
+                        $(e.target)
+                            .closest('.ui-dialog')
+                            .find('.ui-dialog-titlebar-close')
+                            .html('<svg><use xlink:href="./img/icons.svg#close"></use></svg>');
+                    }
                 });
 
                 behaviors();
@@ -143,6 +149,33 @@
 
                     map.geoObjects.add(placemark);
                 });
+            });
+
+
+        $('.before-after .owl-carousel')
+            .once()
+            .owlCarousel({
+                items: 1,
+                dots: false,
+                nav: true,
+                navText: [
+                    '<svg><use xlink:href="./img/icons.svg#arrow-medium"></use></svg>',
+                    '<svg><use xlink:href="./img/icons.svg#arrow-medium"></use></svg>'
+                ]
+            });
+
+
+        $('.right-menu-block a')
+            .once()
+            .click(function(){
+                let li = $(this).closest('li');
+                let ul = li.children('ul');
+
+                if (ul.length) {
+                    li.toggleClass('open');
+
+                    return false;
+                }
             });
 
     }
