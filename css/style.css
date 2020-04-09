@@ -291,7 +291,7 @@ b, strong {
 .html-text h2 {
     font-weight: 300;
     font-size: 50px;
-    color: var(--color-main);
+    color: #cb7457;
     letter-spacing: -2px;
     line-height: 1.2;
     margin: 0 0 30px;
@@ -299,10 +299,17 @@ b, strong {
 .html-text h3 {
     font-weight: 300;
     font-size: 35px;
-    color: var(--color-main);
+    color: #cb7457;
     letter-spacing: -1px;
     line-height: 1.2;
     margin: 0 0 30px;
+}
+
+.html-text .box {
+    margin-bottom: 50px;
+}
+.html-text .box:last-child {
+    margin-bottom: 0;
 }
 
 .flex {
@@ -817,6 +824,15 @@ button.owl-dot.active span {
     transform: rotate(-180deg);
 }
 
+.doctors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.doctors-list:not(.owl-carousel) {
+    margin-right: -80px;
+}
+
 .doctors-list-item {
     width: 480px;
     color: #ffffff;
@@ -836,7 +852,12 @@ button.owl-dot.active span {
     background: #fff;
     z-index: 1;
 }
-
+.doctors-list-item .experience {
+    color: #efd7cb;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
 .doctors-list-item .img {
     position: relative;
     z-index: 2;
@@ -869,6 +890,9 @@ button.owl-dot.active span {
     position: relative;
     z-index: 3;
 }
+.doctors-list-item .info .name {
+    margin-bottom: 12px;
+}
 .doctors-list-item .info .name a {
     font-weight: 500;
     font-size: 24px;
@@ -877,9 +901,6 @@ button.owl-dot.active span {
 }
 .doctors-list-item .info .name a:hover {
     text-decoration: underline;
-}
-.doctors-list-item .info .name {
-    margin-bottom: 26px;
 }
 .doctors-list-item .info .more svg {
     width: 80px;
