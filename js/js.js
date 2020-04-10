@@ -95,11 +95,23 @@
         $('.doctors-list.owl-carousel')
             .once()
             .owlCarousel({
-                autoWidth: true,
-                margin: 80,
                 loop: true,
                 nav: false,
-                dots: false
+                dots: false,
+                responsive: {
+                    0: {
+                        margin: 20,
+                        autoWidth: true
+                    },
+                    768: {
+                        margin: 30,
+                        autoWidth: true
+                    },
+                    1640: {
+                        margin: 80,
+                        autoWidth: true
+                    }
+                }
             });
 
 
@@ -167,7 +179,7 @@
 
         $('.right-menu-block a')
             .once()
-            .click(function(){
+            .click(function () {
                 let li = $(this).closest('li');
                 let ul = li.children('ul');
 
@@ -176,6 +188,73 @@
 
                     return false;
                 }
+            });
+
+
+        $('.mobile-menu-block .menu a')
+            .once()
+            .click(function () {
+                let li = $(this).closest('li');
+                let ul = li.children('ul');
+                let wrapper = $(this).closest('.menu');
+
+                if (ul.length) {
+                    wrapper
+                        .find('.open')
+                        .not(li)
+                        .removeClass('open');
+
+                    li.toggleClass('open');
+
+                    return false;
+                }
+            });
+
+
+        $('[data-mobile-menu-toggle]')
+            .once()
+            .click(function () {
+                $('body').toggleClass('mobile-menu-open');
+
+                return false;
+            });
+
+
+        $('[data-mobile-second-menu-toggle]')
+            .once()
+            .click(function () {
+                $('body').toggleClass('mobile-second-menu-open');
+
+                return false;
+            });
+
+
+        $('.news-grid.owl-carousel')
+            .once()
+            .owlCarousel({
+                responsive: {
+                    0: {
+                        autoWidth: true,
+                        margin: 20
+                    },
+                    768: {
+                        items: 3,
+                        margin: 30
+                    },
+                    1640: {
+                        items: 3,
+                        margin: 80
+                    }
+                }
+            });
+
+
+        $('.footer-block .menus .title')
+            .once()
+            .click(function () {
+                $(this)
+                    .closest('.menu')
+                    .toggleClass('open');
             });
 
     }

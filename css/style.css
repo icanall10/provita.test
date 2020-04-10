@@ -12,6 +12,7 @@ html body {
     line-height: 1.55;
     margin: 0;
     padding: 0;
+    min-width: 360px;
 }
 .container {
     width: 1600px;
@@ -232,7 +233,8 @@ b, strong {
     margin-left: -1em;
     font-size: 20px;
     text-align: center;
-    padding-right: 5px;
+    position: relative;
+    left: -5px;
 }
 .html-text li > ul {
     margin-top: 8px !important;
@@ -553,32 +555,25 @@ body.is-home-page .header-block {
     position: relative;
     z-index: 1;
 }
-.slider-block .item .img {
+.slider-block .item .img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.slider-block .item .inner {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 1;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    z-index: -1;
-}
-.slider-block .item .img img {
-    width: auto;
-    height: auto;
-}
-.slider-block .item .inner {
-    height: 671px;
-    display: flex;
-    padding: 70px 0;
-    box-sizing: border-box;
 }
 .slider-block .item .info {
-    background-color: rgb(255, 255, 255);
-    opacity: 0.749;
+    background-color: rgba(255, 255, 255, 0.749);
     padding: 80px;
     box-sizing: border-box;
     width: 645px;
@@ -704,13 +699,17 @@ button.owl-dot.active span {
 .services-block .item {
     width: 33.333%;
     position: relative;
+    text-decoration: none;
+}
+.services-block .item span {
+    display: block;
 }
 .services-block .item .name {
     position: absolute;
     left: 40px;
     top: 35px;
 }
-.services-block .item .name a {
+.services-block .item .name {
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
@@ -921,15 +920,36 @@ button.owl-dot.active span {
 }
 
 .news-block {
-    margin: 240px 0 140px;
+    margin: 240px 0 80px;
     background: var(--color-main);
+    position: relative;
+    z-index: 1;
 }
+.news-block:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    background: #fff;
+    z-index: -1;
+}
+
 .news-block .inner {
     position: relative;
     z-index: 1;
     padding-top: 50px;
 }
-.news-block .inner:after {
+.news-block .inner .circle {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.news-block .inner .circle:after {
     content: '';
     position: absolute;
     width: 720px;
@@ -937,7 +957,6 @@ button.owl-dot.active span {
     right: -75px;
     top: -90px;
     background: var(--color-main-2);
-    z-index: -1;
     border-radius: 1000px;
 }
 .news-block .block-title {
@@ -967,15 +986,25 @@ button.owl-dot.active span {
     margin-bottom: 32px;
 }
 
+.news-block .owl-stage {
+    display: flex;
+    justify-content: flex-start;
+}
+.news-block .owl-item{
+    display: flex;
+    padding-bottom: 20px;
+}
+
 .news-block .news-grid-item {
-    margin-bottom: -60px;
     position: relative;
     z-index: 1;
+    box-shadow: 0 0 20px 0 rgba(173, 67, 16, 0.1);
 }
 
 .news-grid {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .news-grid-item {
@@ -1134,6 +1163,8 @@ body.has-sidebar .footer-block {
 .page-info-block .info {
     padding: 58px 0;
     box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 }
 .page-info-block .text {
     font-size: 23px;
@@ -1221,13 +1252,18 @@ body.is-contacts-page .page-info-block .inner:after {
     display: none;
 }
 
-.right-menu-block {
+#right .right-menu-block {
     padding: 80px 0;
 }
+
+#right .right-menu-block a {
+    padding-left: 65px;
+}
+
 .right-menu-block a {
     color: #8d4732;
     text-decoration: none;
-    padding: 6px 10px 6px 65px;
+    padding: 7px 12px;
     line-height: 1.4;
 
     display: flex;
@@ -1241,7 +1277,7 @@ body.is-contacts-page .page-info-block .inner:after {
     color: #ffffff;
 }
 .right-menu-block li {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 .right-menu-block li:last-child {
     margin-bottom: 0;
@@ -1379,8 +1415,9 @@ body.is-service-page .page-info-block .inner:after {
 
 .service-info-block {
     margin: 80px 0;
-    font-size: 20px;
-    line-height: 1.7
+}
+.service-info-block .text {
+    line-height: 1.7;
 }
 
 .inline-links {
@@ -1419,9 +1456,6 @@ body.is-service-page .page-info-block .inner:after {
     letter-spacing: -2px;
     line-height: 1.2;
     margin: 0 0 30px;
-}
-.service-info-block .html-text {
-    font-size: 20px;
 }
 
 .block-header.has-bg {
@@ -1491,6 +1525,11 @@ body.is-service-page #content {
 }
 .service-price-block .block-header .title {
     color: #cb7457;
+}
+
+.service-doctors-block .block-header {
+    background-image: url(../img/service-doctors-bg.jpg);
+    margin-bottom: 50px;
 }
 
 .service-doctors-block {
@@ -1644,6 +1683,7 @@ body.is-service-page #content {
     font-weight: 300;
     font-size: 50px;
     letter-spacing: -2px;
+    float: none;
 }
 .ui-dialog .ui-dialog-titlebar-close {
     width: 30px;
@@ -1769,9 +1809,6 @@ form .item-actions {
     margin-right: 14px;
 }
 
-.doctor-info-block .html-text {
-    font-size: 20px;
-}
 .doctor-info-block .html-text .box {
     margin-bottom: 70px;
 }
@@ -1886,4 +1923,3 @@ form .item-actions {
     background: var(--color-main);
     color: #ffffff;
 }
-
