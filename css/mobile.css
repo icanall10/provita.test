@@ -356,6 +356,8 @@
     }
     .footer-block .instagram svg {
         margin: 0 auto;
+        width: 42px;
+        height: 42px;
     }
     .footer-block .logo {
         justify-content: center;
@@ -464,9 +466,6 @@
     .html-text h2 {
         font-size: 25px;
     }
-    .html-text ul {
-        margin-left: 1em;
-    }
 
     .service-info-block {
         margin: 30px 0;
@@ -527,11 +526,13 @@
 
     .block-header.has-bg .title {
         font-size: 26px;
+        text-shadow: 0 0 3px #fff;
     }
     .block-header.has-bg {
         margin: 30px -20px 15px;
         padding: 20px;
-        background-size: 100% 100%;
+        background-size: auto 100%;
+        background-position: center;
         height: 200px;
     }
 

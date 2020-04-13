@@ -23,7 +23,7 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=1daa24c4-ebaf-4248-b61e-18421fdf36d1&lang=ru_RU"></script>
 </head>
-<body class="is-prices-page">
+<body class="is-prices-page has-sidebar">
 
 
 <div id="header">
@@ -111,152 +111,207 @@
         </div>
     </div>
 
+    <div class="only-tablet-or-mobile">
+        <div class="second-menu-block">
+            <ul>
+                <li>
+                    <a class="icon" data-mobile-second-menu-toggle>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-mobile-second-menu-toggle>
+                        косметология
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="only-tablet-or-mobile">
+        <div class="mobile-second-menu-block" data-mobile-second-menu>
+            <div class="overlay" data-mobile-second-menu-toggle></div>
+            <div class="content">
+                <a href="#" class="close" data-mobile-second-menu-toggle>
+                    <svg>
+                        <use xlink:href="./img/icons.svg#close"></use>
+                    </svg>
+                </a>
+                <div class="title">
+                    Отделение<br>
+                    косметологии
+                </div>
+                <div class="right-menu-block">
+                    <ul>
+                        <li><a href="#">Кардиология</a></li>
+                        <li><a href="#">Гинекология</a></li>
+                        <li><a href="#">Эндокринология</a></li>
+                        <li><a href="#">Косметология</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
 <div id="content">
-
     <div class="container">
 
-        <ul class="breadcrumb">
-            <li><a href="#">Главная</a></li>
-            <li>Прайс</li>
-        </ul>
+        <div id="center">
+            <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li>Прайс</li>
+            </ul>
 
-        <h1>Цены на услуги</h1>
+            <h1>Цены на услуги</h1>
 
-        <div class="prices-page page">
-            <div class="html-text">
+            <div class="prices-page page">
+                <div class="html-text">
 
-                <div class="box">
-                    <h2>Косметология</h2>
-                    <p>
-                        При возможности постановки диагноза без дополнительных анализов врач-гинеколог сразу составит схему
-                        лечения и подробно расскажет вам о необходимых действиях и правилах приема лекарств. Если диагноз
-                        установить путем опроса невозможно, то могут быть назначены дополнительные исследования и анализы.
-                        Стоимость повторного приема при этом будет дешевле. Любые дополнительные платные манипуляции и
-                        услуги
-                        проводятся только с согласия пациента и при предварительном уведомлении о цене процедуры.
-                    </p>
-                </div>
+                    <div class="box">
+                        <h2>Косметология</h2>
+                        <p>
+                            При возможности постановки диагноза без дополнительных анализов врач-гинеколог сразу составит схему
+                            лечения и подробно расскажет вам о необходимых действиях и правилах приема лекарств. Если диагноз
+                            установить путем опроса невозможно, то могут быть назначены дополнительные исследования и анализы.
+                            Стоимость повторного приема при этом будет дешевле. Любые дополнительные платные манипуляции и
+                            услуги
+                            проводятся только с согласия пациента и при предварительном уведомлении о цене процедуры.
+                        </p>
+                    </div>
 
-                <div class="box">
-                    <h3>Биоревитализация</h3>
-                    <div class="prices-box">
-                        <div class="item">
-                            <div class="name">Meso-Xanthin F199</div>
-                            <div class="price">11 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Meso-Wharton P199</div>
-                            <div class="price">19 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Yvoire Hydro</div>
-                            <div class="price">13 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Aquashine</div>
-                            <div class="price">12 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Princess</div>
-                            <div class="price">12 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Radiesse</div>
-                            <div class="price">17 000 ₽</div>
+                    <div class="box">
+                        <h3>Биоревитализация</h3>
+                        <div class="prices-box">
+                            <div class="item">
+                                <div class="name">Meso-Xanthin F199</div>
+                                <div class="price">11 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Meso-Wharton P199</div>
+                                <div class="price">19 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Yvoire Hydro</div>
+                                <div class="price">13 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Aquashine</div>
+                                <div class="price">12 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Princess</div>
+                                <div class="price">12 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Radiesse</div>
+                                <div class="price">17 000 ₽</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="box">
-                    <h3>Контурная пластика</h3>
-                    <div class="prices-box">
-                        <div class="item">
-                            <div class="name">Juvederm Smile</div>
-                            <div class="price">11 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Juvederm Voluma</div>
-                            <div class="price">19 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Juvederm Ultra 3</div>
-                            <div class="price">13 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Juvederm Ultra 4</div>
-                            <div class="price">12 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Princess</div>
-                            <div class="price">12 000 ₽</div>
+                    <div class="box">
+                        <h3>Контурная пластика</h3>
+                        <div class="prices-box">
+                            <div class="item">
+                                <div class="name">Juvederm Smile</div>
+                                <div class="price">11 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Juvederm Voluma</div>
+                                <div class="price">19 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Juvederm Ultra 3</div>
+                                <div class="price">13 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Juvederm Ultra 4</div>
+                                <div class="price">12 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Princess</div>
+                                <div class="price">12 000 ₽</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="box">
-                    <h3>Биоревитализация</h3>
-                    <div class="prices-box">
-                        <div class="item">
-                            <div class="name">Meso-Xanthin F199</div>
-                            <div class="price">11 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Meso-Wharton P199</div>
-                            <div class="price">19 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Yvoire Hydro</div>
-                            <div class="price">13 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Aquashine</div>
-                            <div class="price">12 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Princess</div>
-                            <div class="price">12 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Radiesse</div>
-                            <div class="price">17 000 ₽</div>
+                    <div class="box">
+                        <h3>Биоревитализация</h3>
+                        <div class="prices-box">
+                            <div class="item">
+                                <div class="name">Meso-Xanthin F199</div>
+                                <div class="price">11 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Meso-Wharton P199</div>
+                                <div class="price">19 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Yvoire Hydro</div>
+                                <div class="price">13 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Aquashine</div>
+                                <div class="price">12 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Princess</div>
+                                <div class="price">12 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Radiesse</div>
+                                <div class="price">17 000 ₽</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="box">
-                    <h3>Контурная пластика</h3>
-                    <div class="prices-box">
-                        <div class="item">
-                            <div class="name">Juvederm Smile</div>
-                            <div class="price">11 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Juvederm Voluma</div>
-                            <div class="price">19 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Juvederm Ultra 3</div>
-                            <div class="price">13 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Juvederm Ultra 4</div>
-                            <div class="price">12 000 ₽</div>
-                        </div>
-                        <div class="item">
-                            <div class="name">Princess</div>
-                            <div class="price">12 000 ₽</div>
+                    <div class="box">
+                        <h3>Контурная пластика</h3>
+                        <div class="prices-box">
+                            <div class="item">
+                                <div class="name">Juvederm Smile</div>
+                                <div class="price">11 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Juvederm Voluma</div>
+                                <div class="price">19 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Juvederm Ultra 3</div>
+                                <div class="price">13 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Juvederm Ultra 4</div>
+                                <div class="price">12 000 ₽</div>
+                            </div>
+                            <div class="item">
+                                <div class="name">Princess</div>
+                                <div class="price">12 000 ₽</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
 
-    </div>
 
+        <div id="right">
+            <div class="right-menu-block">
+                <ul>
+                    <li><a href="#">Кардиология</a></li>
+                    <li><a href="#">Гинекология</a></li>
+                    <li><a href="#">Эндокринология</a></li>
+                    <li><a href="#">Косметология</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 
 

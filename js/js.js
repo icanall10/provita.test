@@ -148,7 +148,7 @@
 
                     let map = new ymaps.Map(id, {
                         center: coords,
-                        zoom: 13,
+                        zoom: 15,
                         controls: ['zoomControl']
                     });
 

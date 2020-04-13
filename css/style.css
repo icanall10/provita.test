@@ -48,7 +48,7 @@ body.has-sidebar #content:after {
     bottom: 0;
     width: 50%;
     background: #fff;
-    z-index: -1;
+    z-index: -2;
 }
 body.has-sidebar #center {
     background: #fff;
@@ -219,7 +219,7 @@ b, strong {
 
 .html-text ul {
     list-style: none;
-    margin: 0 0 15px 2em;
+    margin: 0 0 15px 5px;
 }
 .html-text ul:last-child {
     margin-bottom: 0;
@@ -704,6 +704,10 @@ button.owl-dot.active span {
 .services-block .item span {
     display: block;
 }
+.services-block .item .img {
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
 .services-block .item .name {
     position: absolute;
     left: 40px;
@@ -795,6 +799,7 @@ button.owl-dot.active span {
     margin: 65px 0 0 165px;
     letter-spacing: -0.91px;
     max-width: 550px;
+    font-weight: normal;
 }
 .out-target-block .text p {
     margin-bottom: 40px;
@@ -1277,7 +1282,7 @@ body.is-contacts-page .page-info-block .inner:after {
     color: #ffffff;
 }
 .right-menu-block li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .right-menu-block li:last-child {
     margin-bottom: 0;
@@ -1922,4 +1927,19 @@ form .item-actions {
 .pagination .item.active:hover {
     background: var(--color-main);
     color: #ffffff;
+}
+
+body.is-service-page #right {
+    margin-bottom: 100px;
+}
+body.is-service-page #content:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background: #fff;
+    z-index: -1;
 }

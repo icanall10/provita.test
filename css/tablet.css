@@ -253,15 +253,16 @@
         display: block;
         line-height: 1.4;
     }
-    .footer-block .phones {
+    .footer-block .contacts-inner {
         margin-bottom: 20px;
     }
     .footer-block .phone a {
         font-size: 16px;
         line-height: 1.5;
     }
-    .footer-block .instagram {
-        display: none;
+    .footer-block .instagram svg {
+        width: 38px;
+        height: 38px;
     }
     .footer-block .logo {
         display: flex;
@@ -648,6 +649,7 @@
         bottom: -20px;
         margin: 0;
         overflow: hidden;
+        width: 524px;
     }
     .page-info-block .doctor-img img {
         height: calc(100% - 21px);
@@ -797,7 +799,8 @@
         height: 250px;
         margin: 30px -30px 15px;
         padding: 30px;
-        background-size: 100% 100%;
+        background-size: 100% auto;
+        background-position: right center;
     }
     .block-header.has-bg .title {
         font-size: 35px;
@@ -1017,6 +1020,23 @@
     }
     .doctors-list:not(.owl-carousel) .doctors-list-item:after {
         height: 36px;
+    }
+
+    body.is-prices-page .second-menu-block a {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    body.is-service-page #right {
+        margin-bottom: 0;
+    }
+    body.is-service-page #content:before {
+        display: none;
+    }
+
+    .doctor-info-block .year {
+        min-width: 68px;
     }
 
 }
