@@ -44,9 +44,6 @@
         padding: 0 16px;
         margin: 0;
     }
-    .header-block .phone {
-        display: none;
-    }
     .menu-link {
         margin-left: 18px;
         width: 20px;
@@ -682,6 +679,31 @@
         margin-right: 0;
     }
 
+    .phones-block {
+        padding: 3px 0 10px;
+        letter-spacing: -0.3px;
+    }
+    .phones-block .phone {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        color: #000;
+        display: block;
+        line-height: 1.3;
+        margin: 0 8px;
+    }
+    .phones-block .phone:first-child {
+        margin-left: 0;
+    }
+    .phones-block .phone:last-child {
+        margin-right: 0;
+    }
 
+    body:not(.is-home-page) .header-block {
+        border: none;
+    }
+    body:not(.is-home-page) .phones-block {
+        border-bottom: 1px solid var(--color-main);
+    }
 
 }

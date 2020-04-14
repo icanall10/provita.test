@@ -473,8 +473,10 @@ body.is-home-page .header-block {
 .header-block .phone {
     text-decoration: none;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 19px;
     color: #000;
+    display: block;
+    line-height: 1.5;
 }
 .header-block .phone:hover {
     text-decoration: underline;
@@ -1969,7 +1971,8 @@ body.is-service-page #content:before {
     }
 
     .header-block .phone {
-        font-size: 19px;
+        font-size: 17px;
+        line-height: 1.4;
     }
     .header-block .order {
         line-height: 46px;
@@ -2344,6 +2347,15 @@ body.is-service-page #content:before {
     }
     .news-grid-item .text {
         font-size: 17px;
+    }
+
+    .news-block .inner .circle {
+        top: -90px;
+        right: -30px;
+        overflow: hidden;
+    }
+    .news-block .inner .circle:after {
+        top: 0;
     }
 
 }
