@@ -647,6 +647,7 @@
 
     .page-info-block .doctor-img {
         height: auto;
+        right: -30px;
         bottom: -20px;
         margin: 0;
         overflow: hidden;

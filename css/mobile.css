@@ -597,6 +597,7 @@
 
     .page-info-block .doctor-img {
         height: auto;
+        width: auto;
 
         margin: 0;
         overflow: hidden;
