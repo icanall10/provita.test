@@ -465,10 +465,10 @@
         font-size: 12px;
         margin: 8px 0;
     }
-    .doctors-list-item .info .more {
-        margin-right: 0;
+    .doctors-list-item .more {
+        margin: 20px;
     }
-    .doctors-list-item .info .more svg {
+    .doctors-list-item .more svg {
         width: 40px;
         height: 20px;
     }
@@ -1029,10 +1029,12 @@
         font-weight: 600;
     }
 
-    body.is-service-page #right {
+    body.is-service-page #right,
+    body.is-contacts-page #right {
         margin-bottom: 0;
     }
-    body.is-service-page #content:before {
+    body.is-service-page #content:before,
+    body.is-contacts-page #content:before {
         display: none;
     }
 

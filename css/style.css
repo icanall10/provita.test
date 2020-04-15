@@ -909,14 +909,13 @@ button.owl-dot.active span {
 .doctors-list-item .info .name a:hover {
     text-decoration: underline;
 }
-.doctors-list-item .info .more svg {
+.doctors-list-item .more svg {
     width: 80px;
     height: 38px;
     fill: #fff;
 }
-.doctors-list-item .info .more {
-    margin-top: 22px;
-    margin-right: -18px;
+.doctors-list-item .more {
+    margin: 25px;
 }
 .doctors-block .block-header {
     margin-bottom: 45px;
@@ -925,6 +924,16 @@ button.owl-dot.active span {
 .owl-carousel .doctors-list-item {
     margin-right: 0;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.doctors-list .owl-stage {
+    display: flex;
+    justify-content: flex-start;
+}
+.doctors-list .owl-item {
+    display: flex;
 }
 
 .news-block {
@@ -1378,7 +1387,7 @@ body.is-contacts-page .page-info-block .inner:after {
 }
 
 .contacts-place-block {
-    margin-bottom: 130px;
+    margin-bottom: 100px;
 }
 .contacts-place-block .title {
     font-size: 50px;
@@ -1932,10 +1941,12 @@ form .item-actions {
     color: #ffffff;
 }
 
-body.is-service-page #right {
+body.is-service-page #right,
+body.is-contacts-page #right {
     margin-bottom: 100px;
 }
-body.is-service-page #content:before {
+body.is-service-page #content:before,
+body.is-contacts-page #content:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -2215,6 +2226,7 @@ body.is-service-page #content:before {
     }
     .order-block {
         padding: 50px;
+        margin-bottom: 70px;
     }
     .order-block .text {
         font-size: 28px;
@@ -2224,11 +2236,13 @@ body.is-service-page #content:before {
         flex-wrap: nowrap;
     }
 
-    body.is-service-page #right {
-        margin-bottom: 50px;
+    body.is-service-page #right,
+    body.is-contacts-page #right {
+        margin-bottom: 70px;
     }
-    body.is-service-page #content:before {
-        height: 50px;
+    body.is-service-page #content:before,
+    body.is-contacts-page #content:before {
+        height: 70px;
     }
 
     h1 {
@@ -2356,6 +2370,10 @@ body.is-service-page #content:before {
     }
     .news-block .inner .circle:after {
         top: 0;
+    }
+
+    .contacts-place-block {
+        margin-bottom: 70px;
     }
 
 }
