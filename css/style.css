@@ -2306,7 +2306,7 @@ body.is-contacts-page #content:before {
     .doctors-list-item {
         margin-right: 30px;
         margin-bottom: 30px;
-        width: 400px;
+        width: 385px;
     }
     .doctors-list-item .img img {
         width: 100%;
@@ -2318,7 +2318,7 @@ body.is-contacts-page #content:before {
         left: -1px;
     }
     .doctors-list-item:after {
-        height: 52px;
+        height: 50px;
     }
     .doctors-list-item .info .name a {
         display: block;

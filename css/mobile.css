@@ -673,7 +673,7 @@
         left: 0;
     }
     body.is-doctors-page .doctors-list:not(.owl-carousel) .doctors-list-item {
-        width: auto;
+        width: 100%;
         margin: 0 0 25px;
     }
     body.is-doctors-page .doctors-list:not(.owl-carousel) .doctors-list-item:last-child {
