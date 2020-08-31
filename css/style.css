@@ -1338,10 +1338,22 @@ body.is-contacts-page .page-info-block .inner:after {
 .svg-contacts-mail {
     width: 81px;
     height: 43px;
+
+    position: relative;
+    left: -8px;
 }
 .svg-contacts-instagram {
-    width: 42px;
-    height: 42px;
+    width: 52px;
+    height: 52px;
+
+    stroke-width: 2px;
+    stroke: white;
+}
+.svg-contacts-block {
+    width: 54px;
+    height: 54px;
+    stroke-width: 0.7px;
+    stroke: white;
 }
 
 .contacts-block {
